@@ -1,3 +1,2 @@
-deployment-3ollama.yaml
-deployment2-ollama.yaml
-docker-compose.yaml
+./deployment-3ollama.yaml
+./deployment2-ollama.yaml

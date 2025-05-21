@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ollama-nodeport-service
+  namespace: ollama
+spec:
+  selector:
+    app: ollama
+  ports:
+  - protocol: TCP
+    port: 11434
+    targetPort: 11434
+    nodePort: 31434  # Optional: Specify a nodePort or let Kubernetes assign one
+  type: NodePort
